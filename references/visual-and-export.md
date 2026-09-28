@@ -8,6 +8,14 @@
 - Process: center arrows in the gap between boxes, anchored to the boxes rather than paragraph lengths; use the same vertical reference across the row.
 - Matrix: compare the same dimensions; distinguish unavailable information from poor performance. Do not manufacture scores.
 
+## HTML functional acceptance
+
+Before expanding the deck, exercise representative cover, content, comparison and chapter-cover pages through a permitted preview. Use distinct slide-shell and inner-layout classes, for example `slide layout-matrix` outside and `matrix-body` inside. Do not reuse `matrix`, `flow`, `columns`, or similar layout classes on both containers: their display, height and grid rules can reveal hidden slides and squeeze content.
+
+Run a regression over every slide using the actual generated HTML/CSS/JS. In normal viewing, assert exactly one visible slide and that its stable ID, counter, title and hash agree. Exercise next/previous, first/last, directory jumps and deep links. Check computed display/visibility and bounding rectangles in an authorized renderer when available; class toggles or HTML counts alone do not prove visibility. Confirm the slide shell retains its intended dimensions after layout rules apply. Test print mode separately: all slides once, correct order and page breaks. Check assets loaded and text/critical visuals stay within bounds at intended viewports.
+
+If rendering is blocked, use available code-level tests and state their narrower coverage. Keep visual review pending. Never label a mock-DOM or static CSS check as browser inspection. Track structural validation, interaction validation, visual review and deployment independently; successful publishing proves none of the first three. Deliver a blocked-visual artifact only as awaiting visual acceptance.
+
 ## Per-page inspection
 
 Inspect rendered final pages at reading size and full resolution, then review the contact sheet for pacing. Check:
@@ -15,9 +23,10 @@ Inspect rendered final pages at reading size and full resolution, then review th
 2. Intentional title wrapping; clear hierarchy; consistent padding; no clipping or overlaps.
 3. Balanced text/image weights and vertical distribution; no upper-half pileup or accidental central void. Do not eliminate purposeful whitespace indiscriminately.
 4. Sequential labels and aligned arrows; parallel cards have comparable visual treatment.
-5. Image meaning: actual product, hands, screens or interaction supporting the claim remain visible. Crop is checked after `object-fit`/container scaling, not just in the original.
-6. No unwanted embedded video logo/subtitles, lower-left image overlay, or source footer under the user's chosen style. Keep attribution in notes/register.
-7. Slide number/order, stable IDs, source traceability and approved content unchanged unless authorized.
+5. Image meaning: the product or interface is prominent enough to recognize and closely matches the headline claim; a broad scene is not a substitute for a decisive feature frame. Actual product, hands, screens or interaction supporting the claim remain visible. Crop is checked after `object-fit`/container scaling, not just in the original.
+6. No unwanted embedded video logo/subtitles, lower-left image overlay, or source footer, source caption below the picture, or visible source label in any corner. Keep attribution in notes/register.
+7. Agenda title contains no counts of questions/pages; every substantive chapter begins with its own chapter cover, and content-page budgets remain explicit.
+8. Slide number/order, stable IDs, source traceability and approved content unchanged unless authorized.
 
 For each issue log slide ID, defect class, fix and reviewed output revision. Search all slides for the class. Re-render affected pages and re-check global rhythm. Check image crops visually even when subject bounding boxes pass.
 
