@@ -17,7 +17,7 @@
 | Skill | Skill 类型 | 调用方式 | 它负责什么 | 交给下一步的内容 |
 | --- | --- | --- | --- | --- |
 | `@vendor-keynote-insights` | 个人 skill | 用户在入口提示词中调用 | 统筹厂商发布会分析、证据、素材、HTML 制作与全篇验收，并按格式衔接输出能力 | 洞察提纲、逐页草稿 Manifest、证据与素材登记、所请求的交付文件 |
-| `@presentation-storyboard-governance`（Storyboard Governance） | 个人 skill | 入口 skill 内部衔接，无需用户单独调用 | 从草稿到批准版管理同一份 Manifest，维护页 ID 和内容依据 | `Storyboard_Manifest.md`、来源登记、页码映射 |
+| [`@presentation-storyboard-governance`](https://github.com/lwyjames/presentation-storyboard-governance)（Storyboard Governance） | 个人 skill | 入口 skill 内部衔接，无需用户单独调用 | 从草稿到批准版管理同一份 Manifest，维护页 ID 和内容依据 | `Storyboard_Manifest.md`、来源登记、页码映射 |
 | `@Presentations` | 系统自带 skill | 需要 PPTX／Slides 时由入口 skill 内部衔接 | 依照 Manifest 与批准风格制作或修改可编辑幻灯片，检查实际渲染 | PPTX／Slides 演示文稿 |
 | `@pdf` | 系统自带 skill | 需要 PDF 时由入口 skill 内部衔接 | 从选定的成品导出 PDF，并检查字体、页序和逐页渲染结果 | 已验收的 PDF |
 
