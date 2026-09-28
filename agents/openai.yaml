@@ -1,0 +1,13 @@
+interface:
+  display_name: Vendor Keynote Insights
+  short_description: 厂商发布会洞察、证据与素材管理、演示文稿全篇检查及一致性交付
+  default_prompt: 使用 $vendor-keynote-insights，基于我指定的视频和官网分析这场发布会，生成洞察演示文稿并检查素材、排版与交付版本。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
