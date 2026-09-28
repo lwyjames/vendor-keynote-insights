@@ -1,6 +1,6 @@
 # 厂商发布会洞察演示文稿工作流
 
-这份工作流只列出**你需要提供、审阅或决定的内容**。用户入口是个人 skill `@vendor-keynote-insights`；它会在内部衔接个人 skill [`@presentation-storyboard-governance`](https://github.com/lwyjames/presentation-storyboard-governance) 和系统自带的 `@Presentations`。你无需分别调用后两者。
+这份工作流只列出**你需要提供、审阅或决定的内容**。使用前请确认账号已安装两个个人 skill：[`@vendor-keynote-insights`](https://github.com/lwyjames/vendor-keynote-insights) 和 [`@presentation-storyboard-governance`](https://github.com/lwyjames/presentation-storyboard-governance)。GitHub 仓库保存的是源文件，不会自动安装到账号。使用时只需调用前者；后者与系统自带的 `@Presentations` 会在内部衔接。
 
 ## 开始前准备
 
