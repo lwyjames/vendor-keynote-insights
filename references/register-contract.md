@@ -2,6 +2,8 @@
 
 Use UTF-8 JSON. Resolve local paths relative to the register file. Never embed credentials. Empty template arrays are preparation placeholders, not completed work.
 
+Keep this register internal by default. Store evidence locators, supporting observations, fact/demo/plan/inference distinctions, uncertainty, source conflicts and capture status here, keyed by stable slide IDs. The user-facing Manifest remains the single content authority and defaults to core expression, page content, visual intent and optional speaker notes. Expose the internal records only on explicit request; material product qualifiers remain in page content.
+
 - `revision`: approved content/assets revision; change when either changes.
 - `manifest`: canonical manifest path. Synchronize slide identity/order/title from it; never edit content only in this register.
 - `sources`: objects `{id, kind, url, designated_by_user}`. Kind: `video`, `official`, `transcript`. URL can be a local path for supplied transcript. Only mark designation true with session evidence.

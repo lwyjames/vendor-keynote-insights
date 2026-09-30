@@ -8,6 +8,12 @@
 - Process: center arrows in the gap between boxes, anchored to the boxes rather than paragraph lengths; use the same vertical reference across the row.
 - Matrix: compare the same dimensions; distinguish unavailable information from poor performance. Do not manufacture scores.
 
+## Diagram and slide composition
+
+Default conceptual/scenario/strategic visuals to 创建图像-generated PNGs and compose them with separately typeset titles and viewpoint/body copy. Editable diagram elements are not required. Use deterministic drawing for exact values, labels, process dependencies or other precise information; it may also be embedded as a PNG. Preserve genuine product/UI source imagery separately.
+
+Before placing a generated visual, establish a consistent palette, style, aspect ratio and reserved text space. After composition, inspect whether it supports the headline, remains readable at slide size, and aligns with the copy without crowding. Refine the asset or layout as needed. Record illustrations internally as explanatory visuals, never as factual evidence.
+
 ## HTML functional acceptance
 
 Before expanding the deck, exercise representative cover, content, comparison and chapter-cover pages through a permitted preview. Use distinct slide-shell and inner-layout classes, for example `slide layout-matrix` outside and `matrix-body` inside. Do not reuse `matrix`, `flow`, `columns`, or similar layout classes on both containers: their display, height and grid rules can reveal hidden slides and squeeze content.
