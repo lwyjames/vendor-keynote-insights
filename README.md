@@ -10,7 +10,7 @@
 
 ## 工作流
 
-完整的用户提示词与交接步骤见 [协作工作流](vendor-keynote-insights_%E5%8D%8F%E4%BD%9C%E5%B7%A5%E4%BD%9C%E6%B5%81.md)。
+完整的用户提示词与交接步骤见 [协作工作流](collaboration-workflow.md)。
 
 1. 创建同一份 `Storyboard_Manifest.md` 的逐页草稿，供用户审阅。
 2. 用户批准指定版本后，调用 [Storyboard Governance](https://github.com/lwyjames/presentation-storyboard-governance) 记录批准状态并校验稳定页 ID。
